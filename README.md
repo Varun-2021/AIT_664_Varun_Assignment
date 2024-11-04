@@ -3,9 +3,9 @@ Prediction of house price using the Regression and Classification models using "
 
 FOR LINEAR REGRESSION.
  
-Loading Libraries and Data: I loaded the necessary libraries (tidyverse, ggplot2) and read the housing dataset from the specified path.
+Loading Libraries and Data: I loaded the necessary libraries (tidyverse, ggplot2) and read the housing dataset from the specified path in my pc.
 
-Scatter Plot with Linear Regression: I created a scatter plot showing the relationship between median_income and median_house_value. The plot revealed a positive correlation, and I added a linear regression line to illustrate this relationship.
+Scatter Plot with Linear Regression: I created a scatter plot by taking two columns showing the relationship between median_income and median_house_value. The plot revealed a positive correlation, and I added a linear regression line to illustrate this relationship.
 
 Fitting Linear Regression Model: I fitted a linear regression model, resulting in an R-squared value of 0.4734, indicating that the model explains about 47.34% of the variance in house values. I added residuals and predicted values to the dataframe for further analysis.
 
