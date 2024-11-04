@@ -15,7 +15,7 @@ FOR LOGISTIC REGRESSION (CLASSIFICATION MODEL)
 
 Categorizing House Prices: I calculated the median house price and created a new column (price_category) to classify houses as "High"  or "Low" , converting this column to a factor for classification.
 
-Splitting Data and Fit Logistic Model: I split the dataset into training (70%) and testing (30%) sets and built a logistic regression model using median_income, total_rooms, total_bedrooms, and population as predictors.
+Splitting Data and Fitting Logistic Model: I split the dataset into training (70%) and testing (30%) sets and built a logistic regression model using median_income, total_rooms, total_bedrooms, and population as predictors.
 
 CONCLUSION
 
