@@ -69,9 +69,5 @@ model <- glm(price_category ~ median_income + total_rooms + total_bedrooms + pop
 # Displaying model summary
 summary(model)
 
-# Logistic regression performed better for classification, accurately distinguishing between "High" and "Low" house prices based on significant predictors, and provided interpretable results in terms of classification accuracy.
-
-# Linear regression was less precise, explaining only 47.34% of the variance with high residual error, indicating it’s less effective for predicting individual house prices based solely on median income.
-
 
 
