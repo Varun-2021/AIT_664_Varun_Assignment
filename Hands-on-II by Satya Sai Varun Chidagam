@@ -1,9 +1,9 @@
-
+#Regression Model using Linear Regression
 
 library(tidyverse)
 library(ggplot2)
 
-# Here I am Loading the data
+# Here I am Loading the data from my pc
 df <- read.csv("C:/Users/varun/Downloads/housing.csv")  # Adjusted path to match the uploaded file location
 
 # In this step I am Plotting a Scatter plot with a linear regression line
@@ -12,7 +12,7 @@ ggplot(df, aes(x = median_income, y = median_house_value)) +
   geom_smooth(method = 'lm', se = FALSE, color = "blue") +  # Linear regression line
   labs(title = "House Prices vs. Income", x = "Median Income", y = "Median House Value")
 
-# Here I am Fittingn the linear regression model by using the median house value and median income
+# Here I am Fitting the linear regression model by using the median house value and median income
 model <- lm(median_house_value ~ median_income, data = df)
 summary(model)  # Display model summary with R-squared and p-values
 
