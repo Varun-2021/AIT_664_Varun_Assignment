@@ -22,9 +22,8 @@ df$predicted <- model$fitted.values
 
 # View the modified data frame (optional)
 head(df)  # Check the first few rows of df with residuals and predictions
-##########################################################################################
 
-#At this step I am taking some  Sample median income values for prediction.
+#At this step I am taking some  Sample median income values to check for prediction.
 new_data <- data.frame(median_income = c(2.5, 4.0, 6.0, 8.0))  
 predicted_values <- predict(model, newdata = new_data)
 results <- cbind(new_data, predicted_house_value = predicted_values)
@@ -69,5 +68,10 @@ model <- glm(price_category ~ median_income + total_rooms + total_bedrooms + pop
 
 # Displaying model summary
 summary(model)
+
+# Logistic regression performed better for classification, accurately distinguishing between "High" and "Low" house prices based on significant predictors, and provided interpretable results in terms of classification accuracy.
+
+# Linear regression was less precise, explaining only 47.34% of the variance with high residual error, indicating it’s less effective for predicting individual house prices based solely on median income.
+
 
 
